@@ -9,7 +9,7 @@ var Game = require('./game.js');
 
 
 //hangman graphic.... still working on this
-//var hangManDisplay = Game.newWord.hangman; 
+var hangManDisplay = Game.newWord.hangman; 
 
 //set the maxListener
 require('events').EventEmitter.prototype._maxListeners = 100;
@@ -108,7 +108,7 @@ var hangman = {
 
             //let player know # of guesses remaining 
             console.log('Guesses remaining: ' + that.guessesRemaining);
-            //console.log(hangManDisplay[(that.display)-1]);
+            console.log(hangManDisplay[(that.display)-1]);
 
             console.log('\n*******************');
             console.log(that.currentWord.renderTheWord());
